@@ -335,9 +335,45 @@
       });
     });
 
-
-    historyList.innerHTML = '';
+    // Copy functionality
+    document.querySelectorAll('.copy-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const card = btn.closest('.service-card');
+        const number = card.querySelector('.hotline-number').textContent;
+        navigator.clipboard.writeText(number).then(() => {
+          alert(`Copied: ${number}`);
+          copyCount++;
+          copyCountEl.textContent = `${copyCount} Copy`;
+        });
+      });
     });
+
+    // Call functionality
+    document.querySelectorAll('.call-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const card = btn.closest('.service-card');
+        const name = card.dataset.name;
+        const number = card.dataset.number;
+
+        if (coinCount < 20) {
+          alert('❌ আপনার পযার্প্ত কয়েন নেই! কল করতে কমপক্ষে ২০ কয়েন লাগবে।');
+          return;
+        }
+
+        coinCount -= 20;
+        coinCountEl.textContent = coinCount;
+
+        alert(`Calling ${name}: ${number}`);
+
+        const callTime = new Date().toLocaleTimeString();
+        const entry = document.createElement('div');
+        entry.classList.add('flex', 'justify-between', 'bg-gray-100', 'px-2', 'py-1', 'rounded');
+        entry.innerHTML = `<span>${name} - ${number}</span><span>${callTime}</span>`;
+        historyList.appendChild(entry);
+      });
+    });
+
+
   </script>
 </body>
 
