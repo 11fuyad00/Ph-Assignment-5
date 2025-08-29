@@ -15,47 +15,59 @@
 </head>
 
 <body>
-  <header class="w-11/12 mx-auto py-10 ">
-    <div class="flex justify-between p-[20px]">
-      <div class="flex items-center">
+  <header class="w-11/12 mx-auto py-10">
+    <div class="flex flex-col md:flex-row md:justify-between gap-4 p-5">
+      <div class="hidden md:flex items-center justify-start">
         <img src="logo.png" alt="" class="w-[50px] h-auto">
-        <h1 class="w-[80px] ml-4 text-[#006747] text-xl font-bold">Emergency Service</h1>
+        <h1 class="ml-4 text-[#006747] text-lg md:text-xl font-bold">
+          Emergency<br> Service
+        </h1>
       </div>
-      <div class="flex items-center gap-[10px] w-[350px] h-[55px] justify-between p-[15px]">
-        <div class="flex items-center gap-[8px] bg-[#F1F9EC] px-4 py-2 rounded shadow">
+      <div
+        class="flex flex-row items-center gap-2 w-full md:w-[350px] md:h-[55px] md:justify-between p-3 flex-wrap md:flex-nowrap">
+        <img src="logo.png" alt="" class="w-[40px] h-auto block md:hidden">
+        <div class="flex items-center gap-1 bg-[#F1F9EC] px-3 py-1 rounded shadow">
           <h2 class="font-bold">0</h2>
-          <span class="text-[20px]">❤️</span>
+          <span class="text-[18px]">❤️</span>
         </div>
-        <div class="flex items-center gap-[8px] bg-[#F1F9EC] px-4 py-2 rounded shadow">
+        <div class="flex items-center gap-1 bg-[#F1F9EC] px-3 py-1 rounded shadow">
           <h2 class="font-bold">100</h2>
-          <img src="coin.png" alt="" class="w-[20px] h-auto">
+          <img src="coin.png" alt="" class="w-[18px] h-auto">
         </div>
-        <p class="w-[120px] h-[48px] flex items-center justify-center bg-[#00A63E] text-white rounded-full">2 Copy</p>
+        <p
+          class="flex items-center justify-center bg-[#00A63E] text-white rounded-full px-4 py-2 md:w-[120px] md:h-[48px] text-sm">
+          2 Copy
+        </p>
       </div>
     </div>
   </header>
   <main>
     <section
-      class="w-full h-[150px] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] flex items-center justify-center -translate-y-10">
-      <div class="">
-        <img src="logo.png" alt="" class="w-[70px] h-auto translate-x-90">
-        <p class="text-white text-[16px] translate-y-4">Government Emergency Services at Your Fingertip – A Project by
-          Government of
-          the
-          People’s Republic of
-          Bangladesh</p>
+      class="w-full h-auto bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] flex items-center justify-center -translate-y-10 px-4 py-6 md:h-[150px]">
+      <div class="flex flex-col items-center text-center">
+        <img src="logo.png" alt="" class="w-[150px] md:w-[70px] h-auto mb-3">
+        <h2 class="text-white text-sm md:text-[16px]">জরুরি সেবা ডিরেক্টরি</h2>
+        <p class="text-white text-sm md:text-[16px] mt-[10px]">
+          Government Emergency Services at Your Fingertip <br class="block md:hidden">
+          A Project by Government of the People’s Republic of Bangladesh
+        </p>
       </div>
     </section>
     <!-- main card section -->
     <section class="bg-[#F1F9EC] -translate-y-10">
       <article class="w-11/12 mx-auto py-10 grid grid-cols-12 gap-[25px]">
-        <section class=" col-span-9 grid grid-cols-3 gap-4">
+        <section class=" col-span-12 md:col-span-9 flex flex-col gap-4 md:grid md:grid-cols-3 md:gap-4">
           <!-- National Emergency -->
           <div class="bg-white rounded-xl shadow p-4 flex flex-col gap-4">
             <div class="flex-row items-center">
               <div class="bg-red-100 p-2 rounded-lg h-12 w-[50px]">
                 <div>
                   <img src="emergency.png" alt="" class="w-[30px]">
+                </div>
+                <!-- love icon section -->
+                <div class="-translate-y-7 cursor-pointer">
+                  <img src="favorite_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt=""
+                    class="heart-count translate-x-73 w-20">
                 </div>
               </div>
               <div class="translate-y-2">
@@ -82,6 +94,9 @@
                 <div>
                   <img src="police.png" alt="" class="w-[30px]">
                 </div>
+                <div class="-translate-y-7 cursor-pointer">
+                  <img src="favorite_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="" class="translate-x-73 w-20">
+                </div>
               </div>
               <div class="translate-y-2">
                 <h2 class="font-bold">পুলিশ</h2>
@@ -106,6 +121,9 @@
               <div class="bg-red-100 p-2 rounded-lg h-12 w-[50px]">
                 <div>
                   <img src="fire-service.png" alt="" class="w-[30px]">
+                </div>
+                <div class="-translate-y-7 cursor-pointer">
+                  <img src="favorite_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="" class="translate-x-73 w-20">
                 </div>
               </div>
               <div class="translate-y-2">
@@ -132,6 +150,9 @@
                 <div>
                   <img src="ambulance.png" alt="" class="w-[30px]">
                 </div>
+                <div class="-translate-y-7 cursor-pointer">
+                  <img src="favorite_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="" class="translate-x-73 w-20">
+                </div>
               </div>
               <div class="translate-y-2">
                 <h2 class="font-bold">অ্যাম্বুলেন্স</h2>
@@ -156,6 +177,9 @@
               <div class="bg-red-100 p-2 rounded-lg h-12 w-[50px]">
                 <div>
                   <img src="emergency.png" alt="" class="w-[30px]">
+                </div>
+                <div class="-translate-y-7 cursor-pointer">
+                  <img src="favorite_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="" class="translate-x-73 w-20">
                 </div>
               </div>
               <div class="translate-y-2">
@@ -182,6 +206,9 @@
                 <div>
                   <img src="emergency.png" alt="" class="w-[30px]">
                 </div>
+                <div class="-translate-y-7 cursor-pointer">
+                  <img src="favorite_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="" class="translate-x-73 w-20">
+                </div>
               </div>
               <div class="translate-y-2">
                 <h2 class="font-bold">দুদক</h2>
@@ -206,6 +233,9 @@
               <div class="bg-red-100 p-2 rounded-lg h-12 w-[50px]">
                 <div>
                   <img src="emergency.png" alt="" class="w-[30px]">
+                </div>
+                <div class="-translate-y-7 cursor-pointer">
+                  <img src="favorite_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="" class="translate-x-73 w-20">
                 </div>
               </div>
               <div class="translate-y-2">
@@ -232,6 +262,9 @@
                 <div>
                   <img src="emergency.png" alt="" class="w-[30px]">
                 </div>
+                <div class="-translate-y-7 cursor-pointer">
+                  <img src="favorite_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="" class="translate-x-73 w-20">
+                </div>
               </div>
               <div class="translate-y-2">
                 <h2 class="font-bold">ব্র্যাক</h2>
@@ -257,6 +290,9 @@
                 <div>
                   <img src="emergency.png" alt="" class="w-[30px]">
                 </div>
+                <div class="-translate-y-7 cursor-pointer">
+                  <img src="favorite_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="" class="translate-x-73 w-20">
+                </div>
               </div>
               <div class="translate-y-2">
                 <h2 class="font-bold">বাংলাদেশ রেলওয়ে</h2>
@@ -278,13 +314,87 @@
 
 
         </section>
-        <aside class="bg-white col-span-3">
-          <h1><i class="fa fa-clock-o" aria-hidden="true"></i>Call History</h1>
+        <aside class="col-span-12 md:col-span-3 bg-white p-4 flex flex-col md:flex-col gap-4">
+          <!-- Responsive wrapper for Call History + Clear -->
+          <div
+            class="flex flex-col md:flex-col md:items-start md:justify-between gap-2 md:gap-4 md:flex-col md:flex-none md:items-stretch">
+            <div class="flex justify-between items-center w-full">
+              <h1 class="font-semibold flex items-center gap-3">
+                <i class="fa-regular fa-clock text-xl text-gray-700"></i>Call History
+              </h1>
+              <button class="btn btn-active btn-accent text-white bg-green-500 rounded-3xl w-24 hover:bg-green-600">
+                Clear
+              </button>
+            </div>
+          </div>
         </aside>
       </article>
     </section>
   </main>
   <footer></footer>
+  <script>
+    let heartCount = 0;
+    let coinCount = 100;
+    let copyCount = 0;
+
+    const heartCountEl = document.getElementBy('heart-count');
+    const coinCountEl = document.getElementById('coin-count');
+    const copyCountEl = document.getElementById('copy-count');
+    const historyList = document.getElementById('history-list');
+    const clearHistoryBtn = document.getElementById('clear-history');
+
+    // Heart functionality
+    document.querySelectorAll('.heart-icon').forEach(heart => {
+      heart.addEventListener('click', () => {
+        heartCount++;
+        heartCountEl.textContent = heartCount;
+        heart.style.color = 'red';
+      });
+    });
+
+    // Copy functionality
+    document.querySelectorAll('.copy-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const card = btn.closest('.service-card');
+        const number = card.querySelector('.hotline-number').textContent;
+        navigator.clipboard.writeText(number).then(() => {
+          alert(`Copied: ${number}`);
+          copyCount++;
+          copyCountEl.textContent = `${copyCount} Copy`;
+        });
+      });
+    });
+
+    // Call functionality
+    document.querySelectorAll('.call-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const card = btn.closest('.service-card');
+        const name = card.dataset.name;
+        const number = card.dataset.number;
+
+        if (coinCount < 20) {
+          alert('Not enough coins!');
+          return;
+        }
+
+        coinCount -= 20;
+        coinCountEl.textContent = coinCount;
+
+        alert(`Calling ${name}: ${number}`);
+
+        const callTime = new Date().toLocaleTimeString();
+        const entry = document.createElement('div');
+        entry.classList.add('flex', 'justify-between', 'bg-gray-100', 'px-2', 'py-1', 'rounded');
+        entry.innerHTML = `<span>${name} - ${number}</span><span>${callTime}</span>`;
+        historyList.appendChild(entry);
+      });
+    });
+
+    // Clear history
+    clearHistoryBtn.addEventListener('click', () => {
+      historyList.innerHTML = '';
+    });
+  </script>
 </body>
 
 </html>
