@@ -372,7 +372,10 @@
         historyList.appendChild(entry);
       });
     });
-
+    // Clear history
+    clearHistoryBtn.addEventListener('click', () => {
+      historyList.innerHTML = '';
+    });
 
   </script>
 </body>
