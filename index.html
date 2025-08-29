@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- daisyui & tailwind cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header class="w-11/12 mx-auto py-10 ">
+    <div class="flex justify-between p-[20px]">
+      <div class="flex items-center">
+        <img src="logo.png" alt="" class="w-[50px] h-auto">
+        <h1 class="w-[80px] ml-4 text-[#006747] text-xl font-bold">Emergency Service</h1>
+      </div>
+      <div class="flex items-center gap-[10px] w-[350px] h-[55px] justify-between p-[15px]">
+        <div class="flex items-center gap-[8px] bg-[#F1F9EC] px-4 py-2 rounded shadow">
+          <h2 class="font-bold">0</h2>
+          <span class="text-[20px]">❤️</span>
+        </div>
+        <div class="flex items-center gap-[8px] bg-[#F1F9EC] px-4 py-2 rounded shadow">
+          <h2 class="font-bold">100</h2>
+          <img src="coin.png" alt="" class="w-[20px] h-auto">
+        </div>
+        <p class="w-[120px] h-[48px] flex items-center justify-center bg-[#00A63E] text-white rounded-full">2 Copy</p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section
+      class="w-full h-[150px] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] flex items-center justify-center -translate-y-10">
+      <div class="">
+        <img src="logo.png" alt="" class="w-[70px] h-auto translate-x-90">
+        <p class="text-white text-[16px] translate-y-4">Government Emergency Services at Your Fingertip – A Project by
+          Government of
+          the
+          People’s Republic of
+          Bangladesh</p>
+      </div>
+    </section>
+    <!-- main card section -->
+    <section class="bg-[#F1F9EC] -translate-y-10">
+      <article class="w-11/12 mx-auto py-10 grid grid-cols-12 gap-[25px]">
+        <section class=" col-span-9 grid grid-cols-3 gap-4">
+          <!-- National Emergency -->
+          <div class="bg-white rounded-xl shadow p-4 flex flex-col gap-4">
+            <div class="flex-row items-center">
+              <div class="bg-red-100 p-2 rounded-lg h-12 w-[50px]">
+                <div>
+                  <img src="emergency.png" alt="" class="w-[30px]">
+                </div>
+              </div>
+              <div class="translate-y-2">
+                <h2 class="font-bold">জাতীয় জরুরি সেবা</h2>
+                <p class="text-gray-500">National Emergency</p>
+              </div>
+            </div>
+            <div>
+              <div class="text-black text-2xl font-bold">999</div>
+              <p class="bg-gray-300  rounded-xl px-2 py-1 text-gray-600 text-[11px] w-[75px] px-4 py-2">সার্বজনীন
+              </p>
+            </div>
+            <div class="flex gap-2">
+              <button class="flex-1 border border-gray-300 rounded px-2 py-1 text-gray-600 hover:bg-gray-50"><i
+                  class="fa-solid fa-copy"></i>Copy</button>
+              <button class="flex-1 bg-green-500 text-white rounded px-2 py-1 hover:bg-green-600"><i
+                  class="fa-solid fa-phone"></i>Call</button>
+            </div>
+          </div>
+          <!-- Police -->
+          <div class="bg-white rounded-xl shadow p-4 flex flex-col gap-4">
+            <div class="flex-row items-center">
+              <div class="bg-blue-100 p-2 rounded-lg h-12 w-[50px]">
+                <div>
+                  <img src="police.png" alt="" class="w-[30px]">
+                </div>
+              </div>
+              <div class="translate-y-2">
+                <h2 class="font-bold">পুলিশ</h2>
+                <p class="text-gray-500">Police</p>
+              </div>
+            </div>
+            <div>
+              <div class="text-black text-2xl font-bold">999</div>
+              <p class="bg-gray-300  rounded-xl px-2 py-1 text-gray-600 text-[11px] w-[75px] px-4 py-2">পুলিশ
+              </p>
+            </div>
+            <div class="flex gap-2">
+              <button class="flex-1 border border-gray-300 rounded px-2 py-1 text-gray-600 hover:bg-gray-50"><i
+                  class="fa-solid fa-copy"></i>Copy</button>
+              <button class="flex-1 bg-green-500 text-white rounded px-2 py-1 hover:bg-green-600"><i
+                  class="fa-solid fa-phone"></i>Call</button>
+            </div>
+          </div>
+          <!-- Fire Service -->
+          <div class="bg-white rounded-xl shadow p-4 flex flex-col gap-4">
+            <div class="flex-row items-center">
+              <div class="bg-red-100 p-2 rounded-lg h-12 w-[50px]">
+                <div>
+                  <img src="fire-service.png" alt="" class="w-[30px]">
+                </div>
+              </div>
+              <div class="translate-y-2">
+                <h2 class="font-bold">ফায়ার সার্ভিস</h2>
+                <p class="text-gray-500">Fire Service</p>
+              </div>
+            </div>
+            <div>
+              <div class="text-black text-2xl font-bold">999</div>
+              <p class="bg-gray-300  rounded-xl px-2 py-1 text-gray-600 text-[11px] w-[75px] px-4 py-2">ফায়ার
+              </p>
+            </div>
+            <div class="flex gap-2">
+              <button class="flex-1 border border-gray-300 rounded px-2 py-1 text-gray-600 hover:bg-gray-50"><i
+                  class="fa-solid fa-copy"></i>Copy</button>
+              <button class="flex-1 bg-green-500 text-white rounded px-2 py-1 hover:bg-green-600"><i
+                  class="fa-solid fa-phone"></i>Call</button>
+            </div>
+          </div>
+          <!-- অ্যাম্বুলেন্স -->
+          <div class="bg-white rounded-xl shadow p-4 flex flex-col gap-4">
+            <div class="flex-row items-center">
+              <div class="bg-red-100 p-2 rounded-lg h-12 w-[50px]">
+                <div>
+                  <img src="ambulance.png" alt="" class="w-[30px]">
+                </div>
+              </div>
+              <div class="translate-y-2">
+                <h2 class="font-bold">অ্যাম্বুলেন্স</h2>
+                <p class="text-gray-500">Ambulance</p>
+              </div>
+            </div>
+            <div>
+              <div class="text-black text-2xl font-bold">1994-999999</div>
+              <p class="bg-gray-300  rounded-xl px-2 py-1 text-gray-600 text-[11px] w-[75px] px-4 py-2">স্বাস্থ্য
+              </p>
+            </div>
+            <div class="flex gap-2">
+              <button class="flex-1 border border-gray-300 rounded px-2 py-1 text-gray-600 hover:bg-gray-50"><i
+                  class="fa-solid fa-copy"></i>Copy</button>
+              <button class="flex-1 bg-green-500 text-white rounded px-2 py-1 hover:bg-green-600"><i
+                  class="fa-solid fa-phone"></i>Call</button>
+            </div>
+          </div>
+          <!-- নারী ও শিশু সহায়তা -->
+          <div class="bg-white rounded-xl shadow p-4 flex flex-col gap-4">
+            <div class="flex-row items-center">
+              <div class="bg-red-100 p-2 rounded-lg h-12 w-[50px]">
+                <div>
+                  <img src="emergency.png" alt="" class="w-[30px]">
+                </div>
+              </div>
+              <div class="translate-y-2">
+                <h2 class="font-bold">নারী ও শিশু সহায়তা</h2>
+                <p class="text-gray-500">Women & Child Helpline</p>
+              </div>
+            </div>
+            <div>
+              <div class="text-black text-2xl font-bold">109</div>
+              <p class="bg-gray-300  rounded-xl px-2 py-1 text-gray-600 text-[11px] w-[75px] px-4 py-2">সহায়তা
+              </p>
+            </div>
+            <div class="flex gap-2">
+              <button class="flex-1 border border-gray-300 rounded px-2 py-1 text-gray-600 hover:bg-gray-50"><i
+                  class="fa-solid fa-copy"></i>Copy</button>
+              <button class="flex-1 bg-green-500 text-white rounded px-2 py-1 hover:bg-green-600"><i
+                  class="fa-solid fa-phone"></i>Call</button>
+            </div>
+          </div>
+          <!--দুদক -->
+          <div class="bg-white rounded-xl shadow p-4 flex flex-col gap-4">
+            <div class="flex-row items-center">
+              <div class="bg-red-100 p-2 rounded-lg h-12 w-[50px]">
+                <div>
+                  <img src="emergency.png" alt="" class="w-[30px]">
+                </div>
+              </div>
+              <div class="translate-y-2">
+                <h2 class="font-bold">দুদক</h2>
+                <p class="text-gray-500">Anti-Corruption</p>
+              </div>
+            </div>
+            <div>
+              <div class="text-black text-2xl font-bold">106</div>
+              <p class="bg-gray-300  rounded-xl px-2 py-1 text-gray-600 text-[11px] w-[75px] px-4 py-2">সরকারি
+              </p>
+            </div>
+            <div class="flex gap-2">
+              <button class="flex-1 border border-gray-300 rounded px-2 py-1 text-gray-600 hover:bg-gray-50"><i
+                  class="fa-solid fa-copy"></i>Copy</button>
+              <button class="flex-1 bg-green-500 text-white rounded px-2 py-1 hover:bg-green-600"><i
+                  class="fa-solid fa-phone"></i>Call</button>
+            </div>
+          </div>
+          <!-- বিদ্যুৎ বিভ্রাট -->
+          <div class="bg-white rounded-xl shadow p-4 flex flex-col gap-4">
+            <div class="flex-row items-center">
+              <div class="bg-red-100 p-2 rounded-lg h-12 w-[50px]">
+                <div>
+                  <img src="emergency.png" alt="" class="w-[30px]">
+                </div>
+              </div>
+              <div class="translate-y-2">
+                <h2 class="font-bold">বিদ্যুৎ বিভ্রাট</h2>
+                <p class="text-gray-500">Electricity Outage</p>
+              </div>
+            </div>
+            <div>
+              <div class="text-black text-2xl font-bold">16216</div>
+              <p class="bg-gray-300  rounded-xl px-2 py-1 text-gray-600 text-[11px] w-[75px] px-4 py-2">বিদ্যুৎ
+              </p>
+            </div>
+            <div class="flex gap-2">
+              <button class="flex-1 border border-gray-300 rounded px-2 py-1 text-gray-600 hover:bg-gray-50"><i
+                  class="fa-solid fa-copy"></i>Copy</button>
+              <button class="flex-1 bg-green-500 text-white rounded px-2 py-1 hover:bg-green-600"><i
+                  class="fa-solid fa-phone"></i>Call</button>
+            </div>
+          </div>
+          <!-- ব্র্যাক -->
+          <div class="bg-white rounded-xl shadow p-4 flex flex-col gap-4">
+            <div class="flex-row items-center">
+              <div class="bg-red-100 p-2 rounded-lg h-12 w-[50px]">
+                <div>
+                  <img src="emergency.png" alt="" class="w-[30px]">
+                </div>
+              </div>
+              <div class="translate-y-2">
+                <h2 class="font-bold">ব্র্যাক</h2>
+                <p class="text-gray-500">Brac</p>
+              </div>
+            </div>
+            <div>
+              <div class="text-black text-2xl font-bold">16445</div>
+              <p class="bg-gray-300  rounded-xl px-2 py-1 text-gray-600 text-[11px] w-[75px] px-4 py-2">এনজিও
+              </p>
+            </div>
+            <div class="flex gap-2">
+              <button class="flex-1 border border-gray-300 rounded px-2 py-1 text-gray-600 hover:bg-gray-50"><i
+                  class="fa-solid fa-copy"></i>Copy</button>
+              <button class="flex-1 bg-green-500 text-white rounded px-2 py-1 hover:bg-green-600"><i
+                  class="fa-solid fa-phone"></i>Call</button>
+            </div>
+          </div>
+          <!-- বাংলাদেশ রেলওয়ে -->
+          <div class="bg-white rounded-xl shadow p-4 flex flex-col gap-4">
+            <div class="flex-row items-center">
+              <div class="bg-red-100 p-2 rounded-lg h-12 w-[50px]">
+                <div>
+                  <img src="emergency.png" alt="" class="w-[30px]">
+                </div>
+              </div>
+              <div class="translate-y-2">
+                <h2 class="font-bold">বাংলাদেশ রেলওয়ে</h2>
+                <p class="text-gray-500">Bangladesh Railway</p>
+              </div>
+            </div>
+            <div>
+              <div class="text-black text-2xl font-bold">163</div>
+              <p class="bg-gray-300  rounded-xl px-2 py-1 text-gray-600 text-[11px] w-[75px] px-4 py-2">পরিবহন
+              </p>
+            </div>
+            <div class="flex gap-2">
+              <button class="flex-1 border border-gray-300 rounded px-2 py-1 text-gray-600 hover:bg-gray-50"><i
+                  class="fa-solid fa-copy"></i>Copy</button>
+              <button class="flex-1 bg-green-500 text-white rounded px-2 py-1 hover:bg-green-600"><i
+                  class="fa-solid fa-phone"></i>Call</button>
+            </div>
+          </div>
+
+
+        </section>
+        <aside class="bg-white col-span-3">
+          <h1><i class="fa fa-clock-o" aria-hidden="true"></i>Call History</h1>
+        </aside>
+      </article>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+
+</html>
